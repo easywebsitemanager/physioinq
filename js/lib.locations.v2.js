@@ -44,7 +44,7 @@ function initializeMaps() {
         marker = new google.maps.Marker({
             position: pos,
             map: map,
-            icon: "http://www.physioinq.com.au/engadine/images/marker.png"
+            icon: "../images/marker.png"
         });
         google.maps.event.addListener(marker, 'click', (function(marker, i) {
             return function() {
