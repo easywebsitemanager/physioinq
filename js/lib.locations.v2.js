@@ -44,7 +44,7 @@ function initializeMaps() {
         marker = new google.maps.Marker({
             position: pos,
             map: map,
-            icon: "../images/marker.png"
+            icon: "https://cdn.rawgit.com/easywebsitemanager/physioinq/6b5e31ec/images/marker.png"
         });
         google.maps.event.addListener(marker, 'click', (function(marker, i) {
             return function() {
