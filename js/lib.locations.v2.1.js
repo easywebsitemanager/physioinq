@@ -1,6 +1,6 @@
 var MY_MAPTYPE_ID = 'custom_style';
 
-var zoomOut = 4
+if ( $(window).width() < 768) zoomOut = 4; else zoomOut = 3;
 
 function initializeMaps() {
     var featureOpts = [{
@@ -22,7 +22,7 @@ function initializeMaps() {
         },
         mapTypeId: MY_MAPTYPE_ID,
         center: {lat: -23.88535882, lng: 132.53699565},
-        zoom: 4
+        zoom: zoomOut
     };
 
     var map = new google.maps.Map(document.getElementById("map_canvas"), myOptions);
