@@ -1,6 +1,6 @@
 var MY_MAPTYPE_ID = 'custom_style';
 
-if ( $(window).width() < 768) zoomOut = 4; else zoomOut = 3;
+if ( jQuery(window).width() > 739) zoomOut = 4; else zoomOut = 3;
 
 function initializeMaps() {
     var featureOpts = [{
