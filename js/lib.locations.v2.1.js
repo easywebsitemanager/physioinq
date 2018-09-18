@@ -5,7 +5,7 @@ if ( $(window).width() > 739) {
   zoomOut = 4; 
 } 
 else {
-  zoomOut = 6;
+  zoomOut = 2;
 }
 
 function initializeMaps() {
