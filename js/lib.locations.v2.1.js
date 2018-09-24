@@ -2,8 +2,8 @@ var MY_MAPTYPE_ID = 'custom_style';
 
 if ( jQuery(window).width() > 739) zoomOut = 4; else zoomOut = 3;
 
-function initializeMaps() {
-    var featureOpts = [{
+function initializeMaps() {    
+	var featureOpts = [{
         featureType: "all",
         stylers: [{ saturation: -80 }]
     },{
